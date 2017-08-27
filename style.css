@@ -3,10 +3,10 @@
 	width: 25%;
 }
 
-div p {
+div > p {
 	margin-top: 0px;
 }
 
-div h5, div p {
+div h5, div > p {
 	margin-bottom: 0px;
 }
