@@ -1,6 +1,14 @@
+#labText {
+	margin-bottom: 0px;
+}
+
 .lab, .lab2 {
 	display: inline-block;
 	width: 40%;
+}
+
+.lab > h5 {
+	margin-top: 0px;
 }
 
 div > p {
