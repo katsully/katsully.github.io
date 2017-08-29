@@ -26,3 +26,11 @@ div h5, div > p {
 .panel-group {
 	padding-top: 25px;
 }
+
+.panel-body {
+	font-weight: bold;
+}
+
+.class-heading {
+	padding-left: 15px;
+}
