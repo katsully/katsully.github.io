@@ -22,3 +22,7 @@ div > p {
 div h5, div > p {
 	margin-bottom: 0px;
 }
+
+.panel-group {
+	padding-top: 25px;
+}
