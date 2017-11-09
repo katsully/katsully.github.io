@@ -36,3 +36,8 @@ div h5, div > p {
 .class-heading {
 	padding-left: 15px;
 }
+
+#inclass {
+	width: 75%;
+	height: 300px;
+}
