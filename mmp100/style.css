@@ -1,0 +1,43 @@
+body {
+	padding-left: 25px;
+	background-color: #bdc3c7;
+	color: #2c3e50;
+}
+
+#labText {
+	margin-bottom: 0px;
+}
+
+.lab, .lab2 {
+	display: inline-block;
+	width: 40%;
+}
+
+.lab > h5 {
+	margin-top: 5px;
+}
+
+div > p {
+	margin-top: 0px;
+}
+
+div h5, div > p {
+	margin-bottom: 0px;
+}
+
+.panel-group {
+	padding-top: 25px;
+}
+
+.panel-body {
+	font-weight: bold;
+}
+
+.class-heading {
+	padding-left: 15px;
+}
+
+#inclass {
+	width: 75%;
+	height: 300px;
+}
