@@ -4,17 +4,16 @@ body {
 	color: #2c3e50;
 }
 
-#labText {
-	margin-bottom: 0px;
+.labCol {
+	float: left;
+	width: 50%;
 }
 
-.lab, .lab2 {
-	display: inline-block;
-	width: 40%;
-}
-
-.lab > h5 {
-	margin-top: 5px;
+/* Clear floats after the columns */
+.lab:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 div > p {
