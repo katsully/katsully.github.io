@@ -16,6 +16,10 @@ body {
     clear: both;
 }
 
+.labCol > h5 {
+	margin-top: 3px; 
+}
+
 div > p {
 	margin-top: 0px;
 }
