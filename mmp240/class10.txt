@@ -1,0 +1,61 @@
+print this and icm-help-session readme RAW!
+
+attendance
+
+review quiz 2
+
+talk about the midterm
+
+send me assignments!  progress reports are coming!
+
+
+
+JavaScript/p5
+
+What is an object?
+	collection of properties and methods
+
+Think of a car, a car is an object w/ properties like weight and color and methods start stop
+	ask for examples
+	all cars have these properties, but the values diff car to car
+	all cars have these functions but they happen at diff times
+
+objects are variables too (just like the x)
+
+var car = {type: "Honda", model: "500", color:"white"}
+
+you can access property values in 2 ways
+	car.type
+	car["type"]
+
+jump to week 5!
+
+	we can define object type by creating a function for the object type that specifies its name, properties and methods
+
+	a method is a function associated w/ an object
+		a method is a property of an object that is a function
+
+back to week 4
+	describe arrays
+	make array of objects
+	go over for loops
+
+	for(var i=0; i<array.lenght; i++) {
+		doSomething
+	}
+
+	make a bunch of bubbles with random x, y, r, b, g
+
+CODE EXAMPLES
+	bug example
+	bubble example
+
+make alien from other day with a function
+
+partner & switch
+
+
+
+
+
+chantal - github???????
