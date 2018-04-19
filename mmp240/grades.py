@@ -45,8 +45,8 @@ with open('grading/Sheet1.csv', 'r') as infile:
 						tardies += 1
 					elif r == 'a':
 						absences += 1
-				# if "Midterm" in headers[idx]:
-				# 	midterm = float(r)
+				if "Midterm" in headers[idx]:
+					midterm = float(r)
 				# if "Final" in headers[idx]:
 				# 	final = float(r)
 		
@@ -65,7 +65,7 @@ with open('grading/Sheet1.csv', 'r') as infile:
 		student_file.write("\nClass Participation: 100" + "\n")
 		# student_file.write("\nClass Participation: " + str(class_participation*10) + "\n")
 
-		# student_file.write("\nMidterm Grade: " + str(midterm) + "\n")
+		student_file.write("\nMidterm Grade: " + str(midterm) + "\n")
 
 		# student_file.write("\nFinal Grade: " + str(final) + "\n")
 
@@ -87,18 +87,18 @@ with open('grading/Sheet1.csv', 'r') as infile:
 		student_file.write("\nGrade deductions: " + str(deduction))
 
 
-		# grade = math.ceil((quiz_grade * .15) + (hw_grade * .4) + class_participation + (midterm * .15) + (final * .2) - (1.5*deduction))
-		grade = math.ceil((quiz_grade * .15) + (hw_grade * .4) + class_participation - (1.5*deduction))
-		grade1 = math.ceil(grade + 35)
-		grade2 = math.ceil(grade + (35 * .8))
-		# grade1 = math.ceil(grade + 20)
-		# grade2 = math.ceil(grade + (20 * .8))
+		grade = math.ceil((quiz_grade * .15) + (hw_grade * .4) + class_participation + (midterm * .15) + (final * .2) - (1.5*deduction))
+		# grade = math.ceil((quiz_grade * .15) + (hw_grade * .4) + class_participation - (1.5*deduction))
+		# grade1 = math.ceil(grade + 35)
+		# grade2 = math.ceil(grade + (35 * .8))
+		grade1 = math.ceil(grade + 20)
+		grade2 = math.ceil(grade + (20 * .8))
 
-		student_file.write("\n\nPotential grade if you get a 100 on the midterm and final: " + str(grade1))
-		student_file.write("\nPotential grade if you get a 80 on the midterm and final: " + str(grade2))
+		# student_file.write("\n\nPotential grade if you get a 100 on the midterm and final: " + str(grade1))
+		# student_file.write("\nPotential grade if you get a 80 on the midterm and final: " + str(grade2))
 
-		# student_file.write("\n\nPotential grade if you get a 100 on the final: " + str(grade1))
-		# student_file.write("\nPotential grade if you get a 80 on the final: " + str(grade2))
+		student_file.write("\n\nPotential grade if you get a 100 on the final: " + str(grade1))
+		student_file.write("\nPotential grade if you get a 80 on the final: " + str(grade2))
 
 		# student_file.write("\nYOUR FINAL GRADE: " + str(grade))
 		
