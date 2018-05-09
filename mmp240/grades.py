@@ -26,7 +26,7 @@ with open('grading/Sheet1.csv', 'r') as infile:
 		name = ''.join(n.split(',')[::-1])
 		student_file = open("grading/" + name + ".txt", 'w')
 		student_file.write("Name: " + ' '.join(n.split(',')[::-1]) + "\n")
-		student_file.write("Email: " + row[1] + "\n")
+		student_file.write("Github: " + row[1] + "\n")
 		for idx,r in enumerate(row):
 			if r:
 				if "Homework" in headers[idx]:
@@ -87,7 +87,7 @@ with open('grading/Sheet1.csv', 'r') as infile:
 		student_file.write("\nGrade deductions: " + str(deduction))
 
 
-		grade = math.ceil((quiz_grade * .15) + (hw_grade * .4) + class_participation + (midterm * .15) + (final * .2) - (1.5*deduction))
+		grade = math.ceil((quiz_grade * .15) + (hw_grade * .4) + class_participation + (midterm * .15) + (final * .2) - (1*deduction))
 		# grade = math.ceil((quiz_grade * .15) + (hw_grade * .4) + class_participation - (1.5*deduction))
 		# grade1 = math.ceil(grade + 35)
 		# grade2 = math.ceil(grade + (35 * .8))
@@ -102,7 +102,7 @@ with open('grading/Sheet1.csv', 'r') as infile:
 
 		# student_file.write("\nYOUR FINAL GRADE: " + str(grade))
 		
-		student_file.write("\n\nPlease note, class participation will not be an automatic 100 moving forward in the semester. Also, there will be more quizzes and homeworks that can also improve your final grade. Feel free to email me with any comments, questions, or concerns.")
+		# student_file.write("\n\nPlease note, class participation will not be an automatic 100 moving forward in the semester. Also, there will be more quizzes and homeworks that can also improve your final grade. Feel free to email me with any comments, questions, or concerns.")
 		student_file.close()
 
 infile.close()
