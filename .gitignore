@@ -1,3 +1,6 @@
 *.DS_Store
 */lectures/
 */grading/
+
+# Jekyll
+_site/
