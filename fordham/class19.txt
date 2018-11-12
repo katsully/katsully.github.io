@@ -1,0 +1,72 @@
+toggle()
+
+toggles between show() and hide()
+
+$("button").click(function(){
+    $("p").toggle();
+});
+
+addClass("main") & removeClass("main") --> toggleClass("main")
+
+
+create & inject!
+var p = $('<p>'); ----> <p></p>
+p.addClass('special')
+$('body').append(p);
+
+
+can also do
+var p = $('<p>Hello</p>')
+p = $('<p id="hi">hi</p>')
+p.css('font-size', '40px');
+$('body').append(p);
+
+var paragraphs = $('p') ---> creates an array of paragraphs
+
+
+**review functions
+
+function doSomething(name) {
+	alert("hi " + name);
+}
+
+doSomething("kat");
+
+***review callbacks
+
+without:
+$("button").click(function(){
+    $("p").hide(1000);
+    alert("The paragraph is now hidden");
+});
+
+with callback:
+
+$("button").click(function(){
+    $("p").hide("slow", function(){
+        alert("The paragraph is now hidden");
+    });
+});
+
+can also be;
+$("button").click(function(){
+    $("p").hide("slow", callback);
+});
+
+function callback(){
+	alert("The paragraph is now hidden");
+}
+
+
+***events
+// First Example, with named callback & .on
+var onButtonClick = function() {
+  console.log('clicked!');
+};
+
+$('button').on('click', onButtonClick);
+
+// Second Example, with anonymous callback & .on
+$('button').on('click', function () {
+  console.log('clicked!');
+});

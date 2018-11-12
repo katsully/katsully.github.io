@@ -1,0 +1,24 @@
+<button>HEllooooo</button>
+
+<p>hhhihihihihihihi</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+
+
+$("p").hide();
+
+$("button").click(function(){
+    $("p").show("slow", callback(someDiv));
+});
+
+function callback(someDiv){
+	if(there are still divs){
+
+		alert("The paragraph is now hidden");
+		(someDiv).show("slow", callback(someDiv+1))
+	}
+}
+
+</script>

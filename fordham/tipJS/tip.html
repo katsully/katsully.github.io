@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Tip Calculator</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<div id="calculator">
+		<form>
+			<p>How much was your bill?</p>
+				<p>$<input id="billAmt" type="text" placeholder=""></input></p>
+				<p>How was the service?</p>
+					<select id="serviceQual">
+						<option value="0.3">30%</option>
+						<option value="0.2">20%</option>
+						<option value="0.15">15%</option>
+						<option value="0.10">10%</option>
+					</select>
+		</form>
+		<p>How many people are sharing the bill?</p>
+		<input id="peopleAmt" type="text" placeholder=""></input>
+		<button type="button" id="calculate">Calculate!</button>
+	</div>
+
+	<div id="totalTip">
+		<span id="tip">0.00</span>
+		<small id="each">each</small>
+	</div>
+</body>
+</html>

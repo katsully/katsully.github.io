@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery playground</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<p>Hello, im small but mighty, lacking good grammer</p>
+	<button>Click me!</button>
+
+	<script>
+		// var p = $('<p class="red">some stuff to prove my point!</p>')
+
+		// $('button').click(function(){
+		// 	// toggle() toggles between hide() and show()
+		// 	// $('p').toggle();
+		// 	//toggleClass() toggles addClass() and removeClass()
+		// 	$('p').toggleClass('red');
+		// 	$('body').append(p);
+
+		// });
+
+
+		// FUNCTIONS
+		// defined our function
+		function alertWithName(name){
+			console.log("Hey " + name + "!");
+		// code that does an action!
+		}
+
+		// call the function
+		var myName = "kat";
+		var names = ["kat", "mary", "cindy", "maria", "bob"];
+		for(var i=0; i<names.length; i++){
+			alertWithName(names[i]);
+		}
+
+		// no callbacks
+		// $("button").click(function(){
+  //   		// hide() function has optional duration parameter
+  //   		$("p").hide(1000);
+  //  			alert("The paragraph is now hidden");
+		// });
+
+		// with callbacks with anonymous function
+		// $("button").click(function(){
+    		$("p").hide("slow", function(){
+        		alert("The paragraph is now hidden");
+    		});
+		// });
+	
+		// callback with named function
+		$("p").hide("slow", alertTheMedia);
+
+		function alertTheMedia() {
+			alert("The paragraph is now hidden");
+		}
+		
+
+
+	</script>
+
+
+
+</body>
+</html>
